@@ -1,0 +1,31 @@
+@import vars
+    
+@mixin navigation($verticalsize, $margin, $fontsize)
+    height: $verticalsize
+    background-color: $pallete-navigation-background
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .header-navigation
+        font-size: $fontsize
+        font-weight: 800
+        display: flex
+        align-items: baseline
+
+    .header-navigation-leftpart-link
+        color: $pallete-maintext
+        text-decoration: none
+        font-size: $fontsize * (3.2 / 5.4)
+        font-weight: 500
+        margin-left: $margin * (1 / 3)
+        margin-right: $margin * (1 / 3)
+        transition: color 0.1s ease 0s    
+        &:hover
+            color: $pallete-navigation-red
+
+    
+
+
+
